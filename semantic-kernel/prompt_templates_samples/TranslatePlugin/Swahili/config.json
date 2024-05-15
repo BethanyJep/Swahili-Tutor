@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "description": "translate to Kiswahili",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 1000,
+      "temperature": 0.9,
+      "top_p": 0.0,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  },
+  "input_variables": [
+    {
+      "name": "question",
+      "description": "task subject",
+      "default": ""
+    },
+    {
+      "name": "style",
+      "description": "giving a hint of how you want the tone of the translation",
+      "default": ""
+    },
+    {
+      "name": "time_of_day",
+      "description": "gives time of day for relevant greeting",
+      "default": ""
+    }
+  ]
+}

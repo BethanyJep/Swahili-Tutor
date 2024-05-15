@@ -1,0 +1,36 @@
+{
+  "package": {},
+  "code": {
+    "chat.jinja2": {
+      "type": "llm",
+      "inputs": {
+        "language": {
+          "type": [
+            "string"
+          ]
+        },
+        "style": {
+          "type": [
+            "string"
+          ]
+        },
+        "chat_history": {
+          "type": [
+            "string"
+          ]
+        },
+        "time_of_day": {
+          "type": [
+            "string"
+          ]
+        },
+        "question": {
+          "type": [
+            "string"
+          ]
+        }
+      },
+      "source": "chat.jinja2"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  chat_history:
+    type: list
+    is_chat_history: true
+    default: []
+  question:
+    type: string
+    is_chat_input: true
+    default: I want to ask for the route to Nairobi
+  time:
+    type: string
+    is_chat_input: true
+    default: Morning
+outputs:
+  answer:
+    type: string
+    reference: ${chat.output}
+    is_chat_output: true
+nodes:
+- name: chat
+  type: llm
+  source:
+    type: code
+    path: chat.jinja2
+  inputs:
+    deployment_name: gpt-35-turbo
+    max_tokens: 256
+    temperature: 0.7
+    chat_history: ${inputs.chat_history}
+    question: ${inputs.question}
+    model: gpt-3.5-turbo
+    language: Kiswahili
+    style: Casual
+    time_of_day: ${inputs.time}
+  connection: aoai_connection_name
+  api: chat

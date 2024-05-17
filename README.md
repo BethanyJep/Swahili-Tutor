@@ -5,9 +5,10 @@ Data is the power behind human civilization and knowledge. Over the past decades
 
 ## What are they?
 AI orchestrators are tools, libraries and/or frameworks that ease the process of creating LLM application by streamlining any repetitive process through automation. Some of the AI orchestrators include:
-Semantic Kernel: an open-source SDK that allows you to orchestrate your existing code and more with AI.
-LangChain: a framework to build LLM-applications easily and gives you insights on how the application works
-PromptFlow: this is a set of developer tools that helps you build an end-to-end LLM Applications. Using PromptFlow, you can take your application from an idea to production.
+
+- **Semantic Kernel:** an open-source SDK that allows you to orchestrate your existing code and more with AI.
+- **LangChain:** a framework to build LLM-applications easily and gives you insights on how the application works
+- **PromptFlow:** this is a set of developer tools that helps you build an end-to-end LLM Applications. Using PromptFlow, you can take your application from an idea to production.
 
 ## Scenario
 Let’s delve into a practical scenario. Imagine you want to develop a Language Tutor—an application specifically focused on Swahili. Users can quickly learn basic greetings and perform essential tasks in Swahili. By leveraging the power of these orchestrators, you can bring your vision to life and enhance language learning experiences.
